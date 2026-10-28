@@ -1,0 +1,14 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Moirai+One&family=Nanum+Brush+Script&display=swap');
+
+.w_font1 {
+    font-family: "Dongle", sans-serif;
+}
+
+.w_font2 {
+    font-family: "Moirai One", system-ui;
+}
+
+.w_font3 {
+    font-family: "Nanum Brush Script", cursive;
+}

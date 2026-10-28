@@ -1,0 +1,34 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Grandiflora+One&family=Moirai+One&family=Single+Day&display=swap');
+
+body {
+
+    background-image: url(https://i.namu.wiki/i/tzM2IJehbfXPo3BTFp-NlHGe_QKKlV8A2BOIAOyEB5eHedwYd1lMy11xTxXWr5nnA-rkLA0zV_YOUuIMnzs2MQ.webp);
+    background-origin: padding-box;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+
+}
+
+div {
+    border: 10px solid #000;
+}
+
+section.content_box1 {
+    width: 45%;
+    margin-left: 50%;
+    padding-top: 50px;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    text-align: light;
+}

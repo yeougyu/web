@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-origin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            margin-bottom: 50px;
+            width: 400px;
+            height: 200px;
+            border: 10px dotted red;
+            padding: 35px;
+            background-image: url(./img/bg8.png);
+            background-repeat: no-repeat;
+        }
+
+        .bg1 {
+            background-origin: padding-box;
+            /* 기본값 */
+        }
+
+        .bg2 {
+            background-origin: border-box;
+        }
+
+        .bg3 {
+            background-origin: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dg1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A iste qui voluptatem ullam nemo nisi
+        modi dolor, temporibus, laborum eligendi delectus nostrum similique eum quo voluptatum eos culpa quam! Suscipit?
+    </div>
+    <div class="dg2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A iste qui voluptatem ullam nemo nisi
+        modi dolor, temporibus, laborum eligendi delectus nostrum similique eum quo voluptatum eos culpa quam! Suscipit?
+    </div>
+    <div class="dg3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A iste qui voluptatem ullam nemo nisi
+        modi dolor, temporibus, laborum eligendi delectus nostrum similique eum quo voluptatum eos culpa quam! Suscipit?
+    </div>
+    <div class="dg4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A iste qui voluptatem ullam nemo nisi
+        modi dolor, temporibus, laborum eligendi delectus nostrum similique eum quo voluptatum eos culpa quam! Suscipit?
+    </div>
+
+
+</body>
+
+</html>

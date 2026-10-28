@@ -1,0 +1,147 @@
+@charset "ntf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#wrap {
+  width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background: green;
+
+}
+
+header h1 {
+  top: 0;
+  float: left;
+  background: red;
+}
+
+header nav {
+  float: right;
+  background: hotpink;
+  width: 70%;
+  margin-top: 60px;
+}
+
+header nav ul.gnb>li {
+  width: 25%;
+  background: #ccc;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+
+header nav ul.gnb>li>a {
+  height: 40px;
+  background: rgb(56, 171, 173);
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  /* 메인 메뉴 색상 */
+
+}
+
+header nav ul.gnb>li>ul.lnb {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  background: lawngreen;
+  width: 100%;
+  display: none;
+}
+
+section.imgslides {
+  width: 100%;
+  height: 300px;
+  background: skyblue;
+  text-align: center;
+  line-height: 300px;
+}
+
+section.imgslides {
+  width: 100%;
+  text-align: center;
+}
+
+
+section.event {
+  width: 100%;
+  height: 200px;
+  background: rgb(223, 162, 29);
+  text-align: center;
+  float: left;
+  /* 섹션 위치 */
+}
+
+div article {
+ width: 400px;
+ height: 200px;
+ text-align: center;
+ line-height: 200px;
+ float: left;
+}
+
+.c1 {
+  width: 400px;
+  height: 200px;
+  background: pink;
+}
+
+.c3 {
+  width: 400px;
+  height: 200px;
+  background: lawngreen;
+}
+
+footer.end {
+  width: 100%;
+  height: 100px;
+  background: yellow;
+  /* 푸터 위치 */
+}
+
+div h3 {
+  width: 400px;
+  height: 200px;
+  text-align: center;
+  line-height: 100px;
+  float: left;
+}
+
+.h_c1 {
+  width: 200px;
+  height: 100px;
+  background: red;
+}
+
+.h_c2 {
+  width: 800px;
+  height: 100px;
+  background:blue ;
+}
+
+.h_c3 {
+  width: 200px;
+  height: 100px;
+  background: green;
+}
+
+
+

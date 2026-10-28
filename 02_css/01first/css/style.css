@@ -1,0 +1,7 @@
+@charset "utf-8";       /* css 국룰 */
+
+h2 {
+    font-weight: normal;
+    background-color: brown;
+    color: #fff;
+}
