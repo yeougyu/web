@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scale</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+            width: 640px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul li {
+            width: 200px;
+            height: 150px;
+            overflow: hidden;
+        }
+
+        ul li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        ul li a img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .6s;
+        }
+
+        ul li:hover a img {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi_LlJ9T__gBQUtJ1mEyauIEMJa-wfH6volj7aLV-RtA&s=10"
+                    alt="고양이1"></a></li>
+        <li><a href="#"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgURNc-tr9Me1OHV1QKXfyukExiO4TalNXnaYPBMVnQ&s=10"
+                    alt="고양이2"></a></li>
+        <li><a href="#"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNglNBTvrHi0eqPFHzUvmQv1CjyjmAjYSowaQuQVxvDg&s=10"
+                    alt="고양이3"></a></li>
+    </ul>
+</body>
+
+</html>
