@@ -51,20 +51,20 @@ img {
 
 .swing img:nth-child(2) {
     transform-origin: top;
-    animation: swingAni 7s infinite linear;
+    animation: swingAni 3s infinite linear;
 }
 
 @keyframes swingAni {
     0% {
-        transform: rotate(45deg);
+        transform: rotate(32deg);
     }
 
     50% {
-        transform: rotate(-45deg);
+        transform: rotate(-32deg);
     }
 
     100% {
-        transform: rotate(45deg);
+        transform: rotate(32deg);
     }
 }
 
@@ -95,10 +95,10 @@ img {
     position: absolute;
     right: 400px;
     bottom: 300px;
-    animation: seat2Ani 2s alternate infinite;
+    animation: seat2Ani2 2s alternate infinite;
 }
 
-@keyframes seat2Ani {
+@keyframes seat2Ani2 {
     from {
         transform: translateX(0);
     }
@@ -127,12 +127,36 @@ img {
     left: 0;
     top: 0;
     background: url(../../images/wheel.png);
-    animation: rotateAni 20s linear infinite;
+    animation: rotateAni 2s linear infinite;
+    /* animation: rotateAni 20s linear infinite; */
 }
 
 .machine .rotate img {
     animation: imgAni 20s linear infinite;
     transform-origin: top;
+}
+@keyframes rotateAni1 {
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
+/* @keyframes rotateAni {
+    0% {
+        transform: rotate (0);
+    }
+
+    100% {
+        transform: rotate (360deg);
+    }
+}
+ */
+@keyframes imgAni {
+    0% {
+        transform: rotate (0);
+    }
+
+    100% {
+        transform: rotate (-360deg);
+    }
 }
 
 .machine .rotate .s1 {
@@ -193,24 +217,4 @@ img {
 .machine .rotate .s12 {
     left: 346px;
     top: 193px;
-}
-
-@keyframes rotateAni {
-    0% {
-        transform: rotate (0);
-    }
-
-    100% {
-        transform: rotate (360deg);
-    }
-}
-
-@keyframes imgAni {
-    0% {
-        transform: rotate (0);
-    }
-
-    100% {
-        transform: rotate (-360deg);
-    }
 }
