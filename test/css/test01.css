@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+#container {
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+header {
+    height: 200px;
+    background: #aaa;
+    display: flex;
+    justify-content: space-between; /* 좌/중/우 양끝 정렬 */
+    align-items: center; /*세로 중앙 정렬 */
+    padding: 0 20px; /* 좌우 양끝 20px만큼 여백  (이건 취향따라)*/
+    
+}
+
+body {
+    height: 800px;
+    background: #ccc;
+}
+
+li {
+    list-style: none; /* 메인메뉴 5개에서 순서마크 숨기기 */
+}
+
+.left_cat {
+    height: 80%; /* 80%크기로 자동조절 */
+    width: auto; /* 이미지 비율을 유지 */
+    object-fit: contain; /* 이미지 왜곡을 방지 */
+}
+
+.right_cat {
+    height: 80%; /* 80%크기로 자동조절 */
+    width: auto; /* 이미지 비율을 유지 */
+    object-fit: contain; /* 이미지 왜곡을 방지 */
+}
+
+
+footer {
+    height: 200px;
+    background: #eee;
+}

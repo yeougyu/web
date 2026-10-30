@@ -41,7 +41,7 @@ body {
     height: 100vh;
     background-color: var(--gold_soft);
     overflow: hidden;
-    animation: skyBg linear 10s infinite;
+    animation: skyBg linear 20s infinite;
 }
 
 @keyframes skyBg {
