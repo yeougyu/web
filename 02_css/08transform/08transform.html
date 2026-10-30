@@ -42,7 +42,7 @@
             position: absolute;
             left: 0;
             top: 0;
-            
+            backface-visibility: hidden;
         }
 
         .face img {
@@ -52,11 +52,10 @@
         }
 
         .back {
-              backface-visibility: hidden;
-              transform: rotateX(180deg);
-              
-        }
 
+            transform: rotateX(180deg);
+
+        }
     </style>
 </head>
 
