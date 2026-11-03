@@ -29,6 +29,17 @@
         }
     </script>
     <script src="js/01test.js"></script>
+
+    <button type="button" class='stop_btn' onclick="alert('왜눌렀냐')">누르지마시오</button>
+    <script>
+        document.querySelector('.stop_btn').onclick = function () {
+            document.write('<p>되돌아 가세요 <br> 맞기싫으면</p>')
+        }
+    </script>
+
+    <button id="actionBtn">클릭하세요</button>
+
+
 </body>
 
 </html>
