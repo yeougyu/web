@@ -23,10 +23,17 @@
                   그외는 F
                   "당신의 학점은  입니다"
               */
-            const kor = prompt('국어 점수를 입력하세요');
+          /*   const kor = prompt('국어 점수를 입력하세요');
             const eng = prompt('영어 점수를 입력하세요');
             const math = prompt('수학 점수를 입력하세요');
-            const total = Number(kor) + Number(eng) + Number(math);
+            const total = Number(kor) + Number(eng) + Number(math); */
+
+
+              const kor = Number(prompt('국어 점수를 입력하세요'));
+              const eng = Number(prompt('영어 점수를 입력하세요'));
+              const math = Number(prompt('수학 점수를 입력하세요'));
+              const total = kor + eng + math;
+           
             const i = 3;
             const avg = total / i;
             let grade;
