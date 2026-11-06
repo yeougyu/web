@@ -8,14 +8,19 @@
 </head>
 
 <body>
-    <!--   <select>
-    <option value="2026">2026년도</option>
+    <!--  <select>
+        1900 
+          <option value="2026">2026년도</option>
     <option value="2025">2025년도</option>
-    <option value="2024">2024년도</option>
-  </select> -->
-
+    <option value="2024">2024년도</option> 
+    </select>
+ -->
     <script>
-
+        document.write('<select>');
+        for (let i = 2026; i > 1899; i--) {
+            document.write(`<option value="${i}">${i} 년 </option>`);
+        }
+        document.write('</select>');  
     </script>
 </body>
 
