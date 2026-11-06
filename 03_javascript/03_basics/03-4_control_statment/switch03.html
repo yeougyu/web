@@ -9,7 +9,21 @@
 
 <body>
     <script>
-
+        let text;
+        let week = new Date().getDay();
+        switch (week) {
+            case 1:
+            case 2: text = 'html5';
+                break;
+            case 3:
+            case 4: text = 'css3';
+                break;
+            case 5:
+            case 6: text = 'javascript';
+                break;
+            default: text = '노는것을'
+        }
+        document.write(`오늘은 <b>${text}</b> 학습하는 날입니다.`);
     </script>
 </body>
 

@@ -13,8 +13,8 @@
             /*
                   국어, 영어, 수학 점수를 prompt로 받아와서 - let 변수 3개
                   토탈total - 변수3개를 더함
-                  평균average - 변수3개를 나눔 (토탈 국어,영어,수학,점수,토탈,평균 변수6개)
-                  학점 score - 선언만 함
+                  평균avg - 변수3개를 나눔 (토탈 국어,영어,수학,점수,토탈,평균 변수6개)
+                  학점 grade - 선언만 함
             
                   평균이 90점 이상이면 A
                   80점 이상이면 B
@@ -23,26 +23,26 @@
                   그외는 F
                   "당신의 학점은  입니다"
               */
-
-            let kor = Number(prompt('국어점수를 입력하세요')); //국어
-            let eng = Number(prompt('영어점수를 입력하세요')); //영어
-            let math = Number(prompt('수학점수를 입력하세요')); //수학
-            let total = kor + eng + math; //토탈
-            let average = total / 3; //평균
-            const score = document.querySelector('#result'); //학점
-            if (average >= 90) {
-                score.innerHTML = average + '학점 A';
-            } else if (average >= 80) {
-                score.innerHTML = average + '학점 B';
-            } else if (average >= 70) {
-                score.innerHTML = average + '학점 C';
-            } else if (average >= 60) {
-                score.innerHTML = average + '학점 D';
+            const kor = prompt('국어 점수를 입력하세요');
+            const eng = prompt('영어 점수를 입력하세요');
+            const math = prompt('수학 점수를 입력하세요');
+            const total = Number(kor) + Number(eng) + Number(math);
+            const i = 3;
+            const avg = total / i;
+            let grade;
+            if (avg >= 90) {
+                grade = 'A';
+            } else if (avg >= 80) {
+                grade = 'B';
+            } else if (avg >= 70) {
+                grade = 'C';
+            } else if (avg >= 60) {
+                grade = 'D';
             } else {
-                score.innerHTML = '학점 F';
+                grade = 'F';
             }
-            
-            
+            document.querySelector('#result').innerHTML = `당신의 학점은 ${grade}입니다`;
+
         </script>
     </div>
 </body>
