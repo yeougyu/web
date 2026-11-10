@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>율쌤의 건축학개론</title>
+
+    <!-- [CSS 단계] 미리 방을 예쁘게 인테리어 해둡니다 -->
+    <style>
+        #show-room {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4a90e2;
+            padding: 20px;
+            border: 2px dashed #4a90e2;
+            background-color: #f0f7ff;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- [2단계: HTML 뼈대] 알맹이가 들어올 빈 방(뼈대)을 먼저 만들어둡니다 -->
+    <div id="show-room">여기는 원래 비어있는 방입니다. (로딩 중...)</div>
+
+    <script>
+        // [1단계: 설계 및 테스트] 
+        // 도안을 그리고 계산기(함수)를 테스트합니다. 일반 사용자는 모르게 콘솔에만 찍힙니다.
+        function 율쌤공식(디자인, 코딩) {
+            return `${디자인}디자인과 ${코딩}개발의 만남`;
+        }
+
+        let 자재값테스트 = 율쌤공식("트렌디한", "리액트");
+        console.log("주방에서 몰래 본 자재값:", 자재값테스트); // F12에서만 보임
+
+        // [3단계: JS 배달] 
+        // 테스트가 완료된 값을 HTML 뼈대 방(#show-room)에 직접 꽂아 넣어 화면에 띄웁니다!
+        document.getElementById('show-room').textContent = 자재값테스트;
+    </script>
+</body>
+
+</html>
