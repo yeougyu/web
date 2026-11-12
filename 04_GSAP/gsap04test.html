@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="js/gsap04test.js">
+</head>
+
+<body>
+    <!-- HTML 구조 -->
+    <div class="card">카드 1 (클릭해 보세요)</div>
+    <div class="card">카드 2 (클릭해 보세요)</div>
+    <div class="card">카드 3 (클릭해 보세요)</div>
+
+    <script>
+        // 1. [순수 JS] 화면의 모든 .card 요소를 한꺼번에 찾기
+        const cards = document.querySelectorAll('.card');
+
+        // 2. [순수 JS] 찾은 카드 목록을 하나씩 꺼내어 반복 작업 실행
+        cards.forEach((card) => {
+
+            // 3. [순수 JS] 각 카드에 클릭 이벤트 연결
+            card.addEventListener('click', () => {
+
+                // 4. [순수 JS] 'active' 클래스를 붙였다 뗐다 하기 (상태 표시용)
+                card.classList.toggle('active');
+
+                // 5. [GSAP] 클래스 유무에 따라 크기와 색상 애니메이션 실행
+                if (card.classList.contains('active')) {
+                    gsap.to(card, { scale: 1.1, backgroundColor: '#4f46e5', color: '#fff', duration: 0.3 });
+                } else {
+                    gsap.to(card, { scale: 1, backgroundColor: '#eee', color: '#000', duration: 0.3 });
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>
