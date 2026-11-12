@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         console.log(act);
         if (!act) return;
         if (act === 'play') tl2.play(); //재생
-        if (act === 'pause') tl2.paused();  //멈춤
+        if (act === 'pause') tl2.pause();  //멈춤
         if (act === 'rev') tl2.reverse();   //역재생
         if (act === 'fast') tl2.timeScale(2).play();  //두배 빠르게 재생
         if (act === 'seek1') tl2.seek(1); //1초 지점으로 점프
