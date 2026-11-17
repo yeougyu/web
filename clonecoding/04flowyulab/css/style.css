@@ -919,10 +919,11 @@ main .more.border:hover {
 }
 
 .con .tit a.more:hover {
-    border-color: var(--gray-03);
+    border-color: var(--gr);
 }
 
 footer {
     height: 400px;
     background: #32E0BD;
 }
+
